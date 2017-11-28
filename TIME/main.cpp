@@ -7,7 +7,7 @@ int main()
 {
 	//Using an anonymous object to display
 	//the time at midnight
-	cout << Time().ToString() << "\n";
+	cout << Time() << "\n";
 	Time tw;
 	//	tw.hour=4;
 	//	tw.minute=54;
@@ -16,7 +16,11 @@ int main()
 	tw.SetMinute(54);
 	tw.SetSecond(50);
 
-cout << tw.ToString() << "\n";
+  cout <<"Hour :"<< tw.GetHour()<<endl;
+	cout <<"Minute :"<< tw.GetMinute()<<endl;
+	cout <<"Second :"<< tw.GetSecond()<<endl;
+
+cout << tw<< "\n";
 
 	return 0;
 }

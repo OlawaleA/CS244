@@ -51,6 +51,27 @@ namespace ws3
 				second = value;
 			}
 		}
+
+		int GetHour() const{
+			return hour;
+		}
+
+		int GetMinute() const
+		{
+			return minute;
+		}
+
+		int GetSecond() const
+		{
+			return second;
+		}
+
+		friend std :: ostream& operator<<(std::ostream& out, const Time& obj)
+		{
+			out <<obj. ToString();
+			return out;
+		}
+
 		std::string ToString() const
 		{
 			std::stringstream out;
